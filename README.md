@@ -1,7 +1,8 @@
 <h2>Example 1. Optimization</h2>
+<p>Prepare a opt job file,xtb_opt.com</p>
 <pre lang="shell">
 %chk=CONF_89_xtb.chk
-#P OPT external="./xtb_gaussian.py"
+#P OPT external="./xtb_external.py"
  
 Structure: CONF_89 Calculation: Opt at xTB-GNF2 level
  
@@ -37,5 +38,10 @@ H 2.6113 2.0125 -1.048
 H 1.6225 0.0387 2.0931
 H 1.5793 -1.71 1.8085
 H 0.0799 -0.7824 1.9697
- 
+
+! Here is a blank line
+</pre>
+<p>Perform optimization:</p>
+<pre lang="shell">
+g16 xtb_opt.com
 </pre>
